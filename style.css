@@ -1,0 +1,61 @@
+/* Cat GIF - https://media2.giphy.com/media/ICOgUNjpvO0PC/giphy.gif?cid=ecf05e470uazlwp331ofm5qqlqt7xxr2uffzsl96mq9z1sxr&rid=giphy.gif&ct=g */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(126, 129, 160);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./cat.gif');
+    background-size: 850px;
+    background-position: left center;
+    background-repeat: repeat-x;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    background: rgba(180, 212, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:disabled {
+    cursor: default;
+    filter: brightness(50%);
+}
+
+/* Media Query: Tablet or smaller */
+@media screen and (max-width: 1000px) {
+    .container {
+        background-size: 350px;
+    }
+
+    button {
+        box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.4);
+    }
+}
